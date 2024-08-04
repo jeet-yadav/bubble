@@ -1,10 +1,11 @@
 let time = 60;
 let score = 0;
 let hit = 0;
+let body = document.querySelector("body");
 
 function createBubbles(){
     let bubbles = "";
-    for(let i=0; i<=53; i++){
+    for(let i=0; i<=100; i++){
         let num = Math.floor(Math.random()*10);
         bubbles += `<div class="bubble">${num}</div>`
     }
